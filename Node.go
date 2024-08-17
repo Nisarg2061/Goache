@@ -2,20 +2,6 @@ package main
 
 import "fmt"
 
-func (c *Cache) Remove(n *Node) *Node {
-	fmt.Println("Removing:", n.Value)
-
-	left := n.Left
-	right := n.Right
-
-	left.Right = right
-	right.Left = left
-	c.Queue.Length -= 1
-	delete(c.Hash, n.Value)
-
-	return n
-}
-
 func (c *Cache) Add(n *Node) {
 	fmt.Println("Adding:", n.Value)
 
@@ -30,6 +16,20 @@ func (c *Cache) Add(n *Node) {
 	if c.Queue.Length > SIZE {
 		c.Remove(c.Queue.Tail.Left)
 	}
+}
+
+func (c *Cache) Remove(n *Node) *Node {
+	fmt.Println("Removing:", n.Value)
+
+	left := n.Left
+	right := n.Right
+
+	left.Right = right
+	right.Left = left
+	c.Queue.Length -= 1
+	delete(c.Hash, n.Value)
+
+	return n
 }
 
 func (c *Cache) Display() {
