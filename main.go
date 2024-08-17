@@ -1,23 +1,16 @@
 package main
 
-import "fmt"
-
-type Node struct{}
-
-type Queue struct{}
-
-type Cache struct {
-	Queue Queue
-	Hash  Hash
-}
-
-type Hash map[string]*Node
-
-func NewCache() {
-}
+import (
+	"fmt"
+)
 
 func main() {
 	fmt.Println("Start Cache...")
-	listOfItems := []string{"Cat", "Dog", "Turtle", "Mouse", "Bat"}
-	fmt.Println(listOfItems)
+	cache := NewCache()
+	listOfItems := []string{"Cat", "Dog", "Turtle", "Mouse", "Bat", "Dog", "Nisarg", "Fox", "Tiger"}
+
+	for _, val := range listOfItems {
+		cache.Check(val)
+		cache.Display()
+	}
 }
