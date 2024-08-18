@@ -1,4 +1,4 @@
-package main
+package Cache
 
 func NewCache() Cache {
 	return Cache{Queue: NewQueue(), Hash: Hash{}}
