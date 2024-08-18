@@ -15,13 +15,35 @@ This project is designed to demonstrate the practical application of data struct
 - Order Maintenance: Maintain the order of items based on their usage.
 - Efficient Operations: Deletion occurs at the tail (least recently used), while addition occurs at the head (most recently used).
 
-## Steps to Run the project
+## Example Usage
+```go
+package main
+
+import "github.com/Nisarg2061/Goache/Cache"
+
+func main() {
+	c := Cache.NewCache()
+	c.Check("String")
+	c.Display()
+}
+```
+
+## Installation
+TO install Goache, use `go get`:
+```
+go get github.com/Nisarg2061/Goache
+```
+
+## Steps to Run the project locally
+1. Clone the repository:
 ```
 git clone https://github.com/Nisarg2061/Goache.git
 ```
+2. Navigate to the project directory:
 ```
 cd Goache
 ```
+3. Run the project using Make:
 ```
 make run
 ```
