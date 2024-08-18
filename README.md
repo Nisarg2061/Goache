@@ -15,6 +15,13 @@ This project is designed to demonstrate the practical application of data struct
 - Order Maintenance: Maintain the order of items based on their usage.
 - Efficient Operations: Deletion occurs at the tail (least recently used), while addition occurs at the head (most recently used).
 
+## Installation
+To install Goache, use `go get`:
+```
+go get github.com/Nisarg2061/Goache
+```
+
+
 ## Example Usage
 ```go
 package main
@@ -26,12 +33,6 @@ func main() {
 	c.Check("String")
 	c.Display()
 }
-```
-
-## Installation
-TO install Goache, use `go get`:
-```
-go get github.com/Nisarg2061/Goache
 ```
 
 ## Steps to Run the project locally
