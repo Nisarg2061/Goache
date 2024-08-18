@@ -1,4 +1,4 @@
-package main
+package Cache
 
 const SIZE = 5
 
