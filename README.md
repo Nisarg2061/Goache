@@ -34,17 +34,5 @@ func main() {
 	c.Display()
 }
 ```
-
-## Steps to Run the project locally
-1. Clone the repository:
-```
-git clone https://github.com/Nisarg2061/Goache.git
-```
-2. Navigate to the project directory:
-```
-cd Goache
-```
-3. Run the project using Make:
-```
-make run
-```
+## License
+BSD licensed. See the LICENSE file for details.
