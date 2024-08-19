@@ -1,6 +1,7 @@
 package Cache
 
-func NewCache() Cache {
+func NewCache(s int) Cache {
+	SIZE = s
 	return Cache{Queue: NewQueue(), Hash: Hash{}}
 }
 

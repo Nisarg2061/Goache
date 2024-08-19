@@ -1,6 +1,6 @@
 package Cache
 
-const SIZE = 5
+var SIZE int
 
 type (
 	Node struct {

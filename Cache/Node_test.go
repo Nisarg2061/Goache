@@ -6,7 +6,7 @@ import (
 )
 
 func Test_Add(t *testing.T) {
-	c := NewCache()
+	c := NewCache(5)
 	node1 := &Node{Value: "Check"}
 	c.Add(node1)
 
