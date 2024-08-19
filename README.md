@@ -29,7 +29,7 @@ package main
 import "github.com/Nisarg2061/Goache/Cache"
 
 func main() {
-	c := Cache.NewCache()
+	c := Cache.NewCache(5)
 	c.Check("String")
 	c.Display()
 }
