@@ -4,5 +4,5 @@ build:
 test:
 	@go test ./... -v
 
-run: test build
+run: build
 	@./bin/cache
